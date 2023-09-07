@@ -1,0 +1,239 @@
+@media screen and (max-width: 400px) {
+  .latestCourses {
+    font: normal normal bold 1.3rem/2.3rem 'Poppins';
+  }
+
+  .coursesSubtext {
+    font: normal normal normal 0.7rem/0.8rem 'Segoe UI';
+  }
+
+  .courseContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .courseRow {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .courseRow {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .latestCourses {
+    font: normal normal bold 2.4rem/4.5rem 'Poppins';
+  }
+
+  .coursesSubtext {
+    font: normal normal normal 0.9rem/1.2rem 'Segoe UI';
+  }
+}
+
+.courseContainer {
+  padding-bottom: 2rem;
+  min-height: 48rem;
+}
+
+.latestCourses {
+  text-align: center;
+  color: $blue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coursesSubtext {
+  color: $pink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.courseRow {
+  display: flex;
+
+  .errorMsg {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.courseColumn {
+  justify-content: center;
+  display: flex;
+  padding: 0px 1rem;
+}
+
+.courseCard {
+  background: $transparent;
+  padding-bottom: 1rem;
+  min-width: 22rem;
+  display: flex;
+  flex-direction: column;
+
+  .courseImageType {
+    height: 21rem;
+    background-image: $gradient;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+
+    .categoryContainer {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      position: absolute;
+      .courseType,
+      .extraCourseType {
+        color: $blue;
+        font: normal normal normal 0.6rem/1.1rem 'Segoe UI';
+        display: inline-block;
+        padding: 0.2rem 0.9rem;
+        min-width: 5rem;
+        max-width: max-content;
+        background-color: $white;
+        border-radius: 40px;
+        margin-right: 0.5rem;
+      }
+
+      .extraCourseType {
+        color: $white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $white;
+        background-color: transparent;
+      }
+    }
+
+    .courseImage {
+      object-fit: cover;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  .courseDateSessions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0.5rem 0px;
+
+    .courseDate,
+    .courseSessions {
+      display: flex;
+      .icon-calendar::before {
+        color: $pink;
+        content: '\e900';
+        padding-right: 5px;
+      }
+
+      .icon-book::before {
+        color: $pink;
+        content: '\e901';
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .courseInfo {
+    padding-bottom: 0.8rem;
+  }
+
+  .rating {
+    border-top: 1px solid $separator-grey;
+    padding-top: 0.3rem;
+    text-align: left;
+    display: flex;
+
+    .icon-star::before {
+      content: '\e905';
+      color: $gold;
+      padding-left: 5px;
+    }
+  }
+
+  .readMore,
+  .listingReadMore {
+    font: normal normal 600 0.8rem/1.5rem 'Open Sans';
+    color: $blue;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: max-content;
+    padding: 0.1rem 1.3rem;
+    background: $white 0% 0% no-repeat padding-box;
+    border: 1px solid $blue;
+    border-radius: 50px;
+
+    .icon-arrow-right {
+      content: '\e902';
+      color: $pink;
+      padding-top: 0.3rem;
+      padding-right: 0.3rem;
+    }
+  }
+
+  .readMore:hover,
+  .listingReadMore:hover {
+    background-color: $details-grey;
+    
+  }
+
+  .readMore {
+    margin: 0 auto;
+  }
+
+  .courseTitle {
+    font: normal normal bold 1.2rem/2rem 'Poppins';
+    line-height: 1.8rem;
+    text-align: left;
+    color: $blue;
+    margin: 0px;
+    margin-bottom: auto;
+  }
+
+  .ratingScore,
+  .courseInfo,
+  .courseDateText,
+  .courseSessionsText {
+    font: normal normal normal 0.8rem/1.2rem 'Open Sans';
+    line-height: 1rem;
+    margin: 0px;
+    text-align: left;
+    color: $grey;
+  }
+}
+.allCourses {
+  font: normal normal normal 1rem/1.5rem 'Open Sans';
+  color: $white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  max-width: max-content;
+  padding: 0.7rem 1.5rem;
+  background: $blue 0% 0% no-repeat padding-box;
+  border: 1px solid $blue;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 3rem;
+}
+.allCourses:hover {
+  background-color: #1b2a5e;
+}
+
+.courseListing {
+  padding-top: 2rem;
+}

@@ -1,0 +1,93 @@
+@media screen and (min-width: 1300px) {
+    .courseDetails{
+        width: 75%;
+        padding: 0px 10rem 1rem 10rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .courseDetails{
+        padding: 0px 5rem 1rem 5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .courseDetails{
+        padding: 0px 1rem 1rem 1rem;
+    }
+}
+
+.courseDetailsPage{
+    min-height: 70rem;
+}
+
+.courseDetails{  
+    .detailsCategoryRating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1rem;
+  .detailsCategory {
+    display: flex;  
+    
+    .courseCategory,
+    .courseSubCategory {
+        color: $blue;
+        font: normal normal normal 1rem/1.2rem "Segoe UI";
+        display: inline-block;
+        padding: 0.3rem 1.2rem;
+        min-width: 5rem;
+        max-width: max-content;
+        max-height: 2rem;
+        background-color: $details-grey;
+        border-radius: 40px;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .courseSubCategory {
+        background-color: $white;
+        border-style: solid;
+        border-color: $details-grey;
+        border-width: 0.1rem;
+    }
+}
+.detailsRating {
+    padding-top: 1.2rem;
+    text-align: left;
+    display: flex;
+    .ratingScore {
+        font: normal normal normal 1rem/1.2rem "Open Sans";
+        line-height: 1rem;
+        margin: 0px;
+        text-align: left;
+        color: $blue;
+    }
+    
+    .icon-star::before {
+        content: "\e905";
+        color: $gold;
+      padding-left: 5px;
+    }
+}
+}
+
+.detailsTitle{
+    font: normal normal $fw-semibold 2.5rem/3.75rem "Poppins"   ;
+    color: $blue;
+}
+
+.languagesPretext, .datePretext, .courseDetailsBrief{
+    font: normal normal normal 1.2rem/2rem "Open Sans";
+    color: $light-grey;
+}
+.languages, .date{
+    font: normal normal normal 1.2rem/2rem "Open Sans";
+    color: $blue;
+    padding-right: 3rem;
+}
+
+.courseDetailsImage{
+    padding: 1rem 0px;
+}
+}

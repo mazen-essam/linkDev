@@ -1,0 +1,93 @@
+.text-white {
+  color: $white;
+}
+.text-dark {
+  color: $black;
+}
+.bg-pink {
+  background-color: $pink;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.d-block {
+  display: block;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  text-rendering: optimizeSpeed;
+}
+
+.container__footer {
+  padding-inline: 22px;
+  @media (min-width: 500px) {
+    padding-inline: 3.125rem;
+  }
+
+  @media (min-width: 768px) {
+    padding-inline: 5.25rem;
+  }
+  @media (min-width: 1600px) {
+    padding-inline: 22vw;
+  }
+}
+
+.container__header {
+  padding-inline: 22px;
+  @media (min-width: 768px) {
+    padding-left: 76px;
+    padding-right: 85px;
+  }
+  @media (min-width: 1300px) {
+    padding-inline: 10.6875rem;
+  }
+}
+
+.skip-to-content {
+  position: absolute;
+  z-index: 9999;
+  background-color: $white;
+  color: black;
+  padding: 0.5em 1em;
+  margin-inline: auto;
+  transform: translateY(-105%);
+  transition: transform 250ms ease-in;
+  outline: 1px solid $blue;
+}
+
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
+button:focus {
+  outline: 2px solid $pink;
+  border: none;
+}
+
+a:focus {
+  outline: 2px solid $pink;
+}
+.footer a:focus {
+  outline: 2px solid $white;
+}
+.footer button:focus {
+  outline: 2px solid $white;
+  border: none;
+}

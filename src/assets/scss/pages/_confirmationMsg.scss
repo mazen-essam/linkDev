@@ -1,0 +1,59 @@
+.confirmation_msg {
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &.dark{
+        background-color: $dark-blue;
+        h2{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    }
+
+
+
+    h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: $light-blue;
+
+    }
+
+    
+
+   
+
+    p{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $light-blue;
+
+        &.dark{
+            color: white;
+        }
+    }
+
+    img{
+        padding-bottom: 1rem;
+        width: 30rem;
+
+        @media screen and (max-width: 992px) {
+
+            width: 20rem;
+
+        }
+
+        @media screen and (max-width: 768px) {
+
+            width: 15rem;
+
+        }
+    }
+}

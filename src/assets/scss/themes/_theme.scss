@@ -1,0 +1,317 @@
+//green buttons
+//white or pink small text
+//green large text
+//grey background
+//pink or grey gradient
+
+
+.high-contrast {
+   background-color: $contrast-grey;
+   .header__text{
+      h1{
+         color: $contrast-green;
+      }
+      p{
+         color: $contrast-pink;
+      }
+   }
+   .menu-main {
+      .img {
+         img {
+            content: url("../images/Link_logo_vertical_color_light_RGB.png");
+         }
+      }
+      .me-3 {
+         color: $contrast-pink;
+      }
+      .menu_btn_776 {
+         color: $contrast-pink;
+      }
+      .mt-3 {
+         .me-3 {
+            color: $contrast-pink;
+         }
+         .btn {
+            .sign_in {
+               color: $black;
+            }
+            background-color: $contrast-green;
+         }
+      }
+      background-image: linear-gradient(
+            270deg,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+         ),
+         url("../images/menu_background.png");
+      .links {
+         .list {
+            a {
+               color: $contrast-green;
+            }
+            a:hover {
+               color: $contrast-pink;
+            }
+            a:hover::before {
+               background-color: $contrast-pink;
+            }
+         }
+      }
+      .pt-4 {
+         p {
+            a {
+               color: $contrast-pink;
+            }
+            a:hover {
+               color: $contrast-green;
+            }
+         }
+         .follow {
+            color: $contrast-pink;
+         }
+         .follow:hover {
+            color: $contrast-green;
+         }
+         .social {
+            a {
+               text-decoration: none;
+               color: $contrast-pink;
+            }
+            [class^="icon-"],
+            [class*="icon-"] {
+               &:hover {
+                  color: $contrast-green;
+                  cursor: pointer;
+               }
+            }
+         }
+         .me-2 {
+            color: $white;
+            background-color: $black;
+         }
+      }
+   }
+   .header__nav{
+      .font__resize_btns{
+         button{
+            color: $contrast-green;
+         }
+      }
+      .icon-contrast{
+         color: $contrast-green;
+      }
+      .icon-search::before{
+         color: $contrast-green;
+      }
+      .dropdown-lang{
+         color: $contrast-green;
+      }
+      button{
+            color: $contrast-green;
+            border-color: $contrast-green;
+         }
+      }      
+   .carousel-caption {
+      h1 {
+         color: $contrast-green;
+      }
+
+      p {
+         color: $contrast-pink;
+      }
+
+      .white-large-btn {
+         background-color: $contrast-green;
+         color: $black;
+      }
+   }
+
+   .carousel-indicators {
+      .active {
+         background-color: $contrast-green !important;
+      }
+   }
+   .bottom__button {
+      visibility: hidden;
+   }
+   .courseDetails{
+    .detailsCategoryRating{
+        .courseCategory, .courseSubCategory{
+            background-color: $contrast-green;
+            color: $black;
+            border-color: $black;
+        }
+        .detailsRating{
+            .ratingScore{
+                color: $white;
+            }
+            .icon-star::before{
+                color: $contrast-pink;
+            }
+        }
+    }
+    .detailsTitle{
+        color: $contrast-green;
+    }
+    .languagesPretext{
+        color: $contrast-pink;
+    }
+    .languages{
+        color: $white;
+    }
+    .courseDetailsBrief{
+        color: $white;
+    }
+   }
+
+   .cardLayout:hover {
+      border-color: $contrast-grey;
+   }
+   .cardLayout::before {
+      background: $contrast-gradient-grey;
+   }
+   .cardLayout {
+      .newsDate {
+         .icon-calendar::before {
+            color: $contrast-pink;
+         }
+      }
+      .newsTitle {
+         color: $contrast-green;
+      }
+   }
+   .newsSection {
+      background-color: $contrast-black;
+      .cardNext {
+         h2 {
+            color: $contrast-green;
+         }
+         .carouselButtons {
+            .icon-arrow-left,
+            .icon-arrow-right {
+               background-color: $contrast-grey;
+            }
+            .icon-arrow-left::before,
+            .icon-arrow-right::before {
+               color: $contrast-green;
+            }
+            .icon-arrow-left:hover,
+            .icon-arrow-right:hover {
+               border-color: $contrast-green;
+            }
+         }
+      }
+      .newsButton {
+         background-color: $contrast-green;
+         color: $black;
+      }
+      .newsButton:hover {
+         border-color: $contrast-green;
+      }
+   }
+   .courseContainer,
+   .courseListing {
+      .latestCourses {
+         color: $contrast-green;
+      }
+      .courseCard {
+         .courseDateText,
+         .courseSessionsText,
+         .courseInfo,
+         .ratingScore {
+            color: $white;
+         }
+         .icon-star::before {
+            color: $contrast-pink;
+         }
+         .courseType {
+            background-color: $contrast-green;
+            color: $black;
+         }
+         .courseTitle {
+            color: $contrast-green;
+         }
+         .readMore,
+         .listingReadMore {
+            border-color: $contrast-green;
+            color: $black;
+            background-color: $contrast-green;
+            .icon-arrow-right {
+               color: $black;
+            }
+         }
+      }
+      .allCourses {
+         background-color: $contrast-green;
+         border-color: $contrast-green;
+         color: $black;
+      }
+   }
+   .back__top {
+      color: $contrast-green;
+   }
+
+   .programs-section {
+      h2 {
+         color: $contrast-green;
+      }
+   
+      .programs-content {
+         background-color: $contrast-grey;
+         .extra-bg {
+            background-color: transparent;
+         }
+      }
+   
+      p {
+         color: $contrast-pink;
+      }
+   
+      position: relative;
+   
+      .navy-btn {
+         background-color: $contrast-green;
+         color: $black;
+      }
+      background-image: none;
+      background-color: $contrast-black;
+   }
+   .internship {
+      .internship_img__box {
+         background-color: $contrast-green;
+      }
+      .internship__text {
+         h3 {
+            color: $contrast-green;
+         }
+         h4 {
+            color: $contrast-green;
+         }
+         p {
+            color: $contrast-pink;
+         }
+         a {
+            background-color: $contrast-green;
+            color: $black;
+         }
+      }
+   }
+   .newsDetails {
+      h5 {
+         color: $contrast-green;
+      }
+      p {
+         color: $white;
+      }
+      span {
+         color: $white;
+      }
+      .detailsDate {
+         color: $contrast-green;
+      }
+   }
+}
+
+html{
+    transition: all 0.3s ease-in-out;
+  }

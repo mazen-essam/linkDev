@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('#{$font-location}/poppins-bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('#{$font-location}/OpenSans-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-bold.woff2') format('woff2'),
+    url('../fonts/poppins-bold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-semibold.woff2') format('woff2'),
+    url('../fonts/poppins-semibold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-medium.woff2') format('woff2'),
+    url('../fonts/poppins-medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../fonts/poppins-regular.woff2') format('woff2'),
+    url('../fonts/poppins-regular.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'openSans';
+  src: url('../fonts/OpenSans-SemiBold.ttf') format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'openSans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+  font-weight: 400;
+}
+
+:root {
+  --primary-fontSize: 0px;
+}
+
+html {
+  font-size: calc(var(--primary-fontSize) + 12px) ;
+  @media screen and (min-width: 992px){
+    font-size: calc(var(--primary-fontSize) + 14px) ;
+  }
+  @media screen and (min-width: 1280px){
+    font-size: calc(var(--primary-fontSize) + 16px) ;
+  }
+  @media screen and (min-width: 1400px){
+    font-size: calc(var(--primary-fontSize) + 18px) ;
+  }
+}

@@ -1,0 +1,313 @@
+html {
+  font-size: calc(var(--primary-fontSize) + 12px);
+
+  @media screen and (min-width: 1400px) {
+    font-size: calc(var(--primary-fontSize) + 18px);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: calc(var(--primary-fontSize) + 16px);
+  }
+  @media screen and (min-width: 992px) {
+    font-size: calc(var(--primary-fontSize) + 14px);
+  }
+}
+
+#MainMenu_cont {
+  position: relative !important;
+  inset: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+.open_menu {
+  position: fixed;
+  left: 0px;
+  top: 47%;
+  background-color: $pink;
+  text-align: center;
+  z-index: 2;
+  color: $white;
+  border-radius: 0px;
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 200;
+  }
+  .img {
+    width: 60%;
+    margin: auto;
+  }
+  .icon-close {
+    color: $white;
+  }
+}
+.open_menu:hover {
+  color: $white;
+}
+.open_menu_responsive {
+  position: relative;
+  z-index: 2;
+  left: 5rem;
+  top: 3rem;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+.open_menu:hover {
+  background-color: $pink;
+}
+main {
+  height: 100vh;
+
+  img {
+    width: 100%;
+  }
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  .menu_btn_776 {
+    position: absolute;
+    left: 0%;
+    top: 7%;
+    color: black;
+    z-index: 2;
+    display: none;
+    border: none;
+    background-color: transparent;
+    @media screen and (max-width: 992px) {
+      display: inline;
+    }
+  }
+  .close {
+    position: fixed;
+    left: 0px;
+    top: 47%;
+    background-color: $pink;
+    text-align: center;
+    z-index: 2;
+    border: none;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 200;
+    }
+    .img {
+      width: 60%;
+      margin: auto;
+    }
+    .icon-close {
+      color: $white;
+    }
+  }
+
+  .img_container {
+    position: relative;
+    .icon-search {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      @media screen and (max-width: 992px) {
+        display: inline;
+        text-align: end;
+        font-size: 1.25rem;
+      }
+    }
+  }
+  .menu-main {
+    height: 100vh;
+    .container {
+      height: 100vh;
+    }
+    background-image: url('../images/menu_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin: auto;
+    overflow: hidden;
+    @media screen and (max-width: 600px) {
+      select {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 778px) {
+      .sign {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .sign {
+        display: none;
+      }
+    }
+
+    .sign_in {
+      text-decoration: none;
+      color: $white;
+      font-size: 1.25rem;
+    }
+
+    img {
+      width: 100%;
+    }
+    .img {
+      width: 70%;
+
+      @media screen and (max-width: 600px) {
+        width: 50%;
+        margin: auto;
+      }
+
+      @media screen and (max-width: 778px) {
+        width: 25%;
+        margin: auto;
+      }
+      @media screen and (max-width: 992px) {
+        width: 22%;
+        margin: auto;
+      }
+    }
+    .sign {
+      font-weight: 300;
+
+      .icon-search {
+        color: $blue;
+      }
+    }
+    .list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      transition: all 1s;
+
+      .list-item {
+        margin-top: 1rem;
+        position: relative;
+        transition: all 1s;
+        margin-bottom: 1rem;
+        a {
+          @extend %menu_link;
+          font-size: 2.125rem;
+        }
+      }
+      .list-item {
+        .icon-search {
+          display: none;
+          @media screen and (max-width: 992px) {
+            display: inline;
+            text-align: end;
+            font-size: 1.25rem;
+          }
+        }
+        @media screen and (max-width: 776px) {
+          padding-bottom: 1rem;
+          border-bottom: solid $light-gray-border;
+        }
+        a:hover {
+          color: $blue;
+          padding-left: 0.8rem;
+          transition: all 0.2s;
+        }
+        a:hover::before {
+          content: '';
+          transition: all 0.6s;
+          position: absolute;
+          left: 0;
+          top: 1.6rem;
+          width: 8px;
+          height: 3px;
+          background-color: $blue;
+        }
+      }
+    }
+    select {
+      border: none;
+    }
+
+    .active-menu {
+      position: relative;
+      padding-left: 18px;
+      a {
+        color: $blue;
+      }
+      a::before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 8px;
+        left: 0px;
+        top: 45%;
+        background-color: $blue;
+      }
+    }
+    .sign-menu {
+      background-color: $blue;
+      border-radius: 30px;
+      padding-bottom: 8px;
+      button {
+        color: $white;
+      }
+    }
+    .nav_footer {
+      border-top: 1px solid $light-gray-border;
+      @media screen and (max-width: 776px) {
+        border: none;
+      }
+      select {
+        display: none;
+        @media screen and (max-width: 992px) {
+          display: block;
+          text-align: center;
+          margin-left: 1rem;
+        }
+      }
+
+      .contact {
+        color: #525252;
+        p {
+          @media screen and (max-width: 992px) {
+            display: none;
+          }
+        }
+        a {
+          @extend %menu_link;
+          font-size: 1rem;
+          font-weight: 400;
+          text-decoration: underline black;
+          transition: all 0.3s;
+        }
+        a:hover {
+          color: $blue;
+          text-decoration: underline $blue;
+        }
+      }
+      .social {
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+        [class^='icon-'],
+        [class*='icon-'] {
+          &:hover {
+            color: $blue;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .links {
+      width: 100%;
+    }
+  }
+}
+.hide_open_menu {
+  display: none;
+}

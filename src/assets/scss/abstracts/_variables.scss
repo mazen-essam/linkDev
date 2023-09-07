@@ -1,0 +1,53 @@
+$font-location: "../fonts";
+$image-location: "../images";
+$font-open: "openSans", sans-serif;
+$font-poppins: "poppins", sans-serif;
+$fw-bold: 700;
+$fw-medium: 500;
+$fw-regular: 400;
+$fw-semibold: 600;
+
+// Colors
+$blue: #2437ac;
+$grey: #7e7e7e;
+$details-grey: #dfdfdf;
+$pink: #f016b4;
+$white: #ffffff;
+$gold: #cba363;
+$separator-grey: #d4d4d4;
+$transparent: rgba(0, 0, 0, 0);
+$gradient: linear-gradient(153deg, rgba(19, 39, 107, 0.5), rgba(0, 0, 0, 0));
+$black: #000;
+$icon-blue: #324480;
+$very-light-blue: #00b8ff;
+$internship-blue: #2437ac;
+$light-blue: #253776;
+$dark-blue: #0c1f61;
+$dark-grey: #525252;
+$grey: #7e7e7e;
+$light-grey: #878787;
+$very-light-grey: #d4d4d4;
+$light-gray-border: #b9b9b9;
+
+$contrast-black: #1f1f1f;
+$contrast-grey: #292929;
+$contrast-green: #89ce00;
+$contrast-blue: #0073e6;
+$contrast-pink: #e6308a;
+$contrast-gradient-grey: linear-gradient(
+  360deg,
+  #525252 1%,
+  rgba(0, 0, 0, 0) 50%
+);
+
+$newsGradient: linear-gradient(
+  360deg,
+  rgba(19, 40, 107, 0.85) 12%,
+  rgba(0, 0, 0, 0) 50%
+);
+
+$font-family: "Poppins", sans-serif;
+$navy-color: #253776;
+$navy-color-hover: #1b2a5e;
+$light-gray: #efefef;
+$teal: #00b8ff;

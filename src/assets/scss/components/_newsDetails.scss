@@ -1,0 +1,49 @@
+html {
+   font-size: calc(var(--primary-fontSize) + 12px) ;
+
+   @media screen and (min-width: 1400px) {
+      font-size: calc(var(--primary-fontSize) + 18px) ;
+
+   }
+   @media screen and (min-width: 1280px) {
+      font-size: calc(var(--primary-fontSize) + 16px) ;
+
+   }
+   @media screen and (min-width: 992px) {
+      font-size: calc(var(--primary-fontSize) + 14px) ;
+
+   }
+}
+
+.newsDetails {
+   img {
+      width: 100%;
+   }
+   .img {
+      width: 100%;
+   }
+   font-family: "Open Sans";
+   color: $blue;
+   padding-top: 2rem;
+   width: 100%;
+   .detailsHeader {
+      font-size: 0.7rem;
+      padding-bottom: 1rem;
+      h5 {
+         font-family: "Poppins";
+         font-size: 2.5rem;
+      }
+      .detailsDate {
+         color: $grey;
+      }
+   }
+   .detailsFooter {
+      p {
+         font-size: 1.125rem;
+         color: $black;
+         padding-top: 2rem;
+         padding-bottom: 2rem;
+         padding-right: 4rem;
+      }
+   }
+}
